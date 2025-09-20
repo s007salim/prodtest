@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hello Jenkins!</title>
+    <meta charset="utf-8" />
+    <title>Pipeline Practice Paradise</title>
+    <style>
+      :root { --red:#d32f2f; --black:#0b0b0b; --white:#ffffff; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; background: var(--black); color: var(--white);
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh; display: grid; place-items: center;
+      }
+      .card {
+        background: #000; border: 1px solid #2a2a2a; border-radius: 18px;
+        padding: 40px 48px; text-align: center;
+        box-shadow: 0 12px 32px rgba(0,0,0,.5);
+        max-width: 820px;
+      }
+      h1 {
+        margin: 0 0 10px; color: var(--red); letter-spacing: .5px;
+      }
+      .tagline { font-size: 1.25rem; margin: 8px 0 18px; }
+      .muted { color: #cfcfcf; }
+      .badge {
+        display: inline-block; margin-top: 14px; padding: 6px 12px;
+        border: 1px solid var(--white); border-radius: 999px;
+        font-size: .9rem;
+      }
+    </style>
   </head>
-  <body style="background-color:#e3f2fd; text-align:center; padding-top:60px;">
-    <h1 style="color:#d32f2f; font-family:Arial, sans-serif;">
-      🎉 Welcome to My IIS Website, deployed via Jenkins CI/CD! 🎉
-    </h1>
-    <p style="color:#1976d2; font-size:24px;">
-      If you see this, your CI/CD pipeline works! 🚀
-    </p>
-
-    <!-- Time -->
-    <div style="margin-top:40px;">
-      <span style="color:#00796b; font-size:22px; font-weight:bold;">
-        Time: 2025-09-17 12:44 PM
-      </span>
-    </div>
-
-    <!-- Country -->
-    <div style="margin-top:10px;">
-      <span style="color:#e65100; font-size:22px; font-weight:bold;">
-        Country: Singapore
-      </span>
-    </div>
-
-    <!-- Proverb -->
-    <div style="margin-top:30px;">
-      <span style="color:#7b1fa2; font-size:21px;">
-        "A journey of a thousand miles begins with a single step."
-      </span>
+  <body>
+    <div class="card">
+      <h1>🎯 welcoe to pipeline pracise pradise</h1>
+      <div class="tagline">Hello World from Jenkins!</div>
+      <p class="muted">If you see this, your web server is working!</p>
+      <div class="badge">red • black • white</div>
     </div>
   </body>
 </html>
